@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//функция добавления улова в корзину
+//функция добавления улова в корзину (запись в файл basket. txt)
 void in_basket(ofstream &basket, string &fish)
 {
     //Открываем файл для записи
@@ -19,7 +19,7 @@ void in_basket(ofstream &basket, string &fish)
     basket.close();
 }
 
-//функция рыбалки
+//функция рыбалки (чтение из файла river.txt и сравнение с ловимой рыбой)
 void fishing (string &curFish, ifstream &river, ofstream &basket, int &sum)
 {
     river.open("river.txt");
